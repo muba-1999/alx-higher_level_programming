@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Documentation for a square class"""
+
+
 class Square:
     """Square"""
     def __init__(self, size):
@@ -7,7 +10,6 @@ class Square:
 
         Args:
             size (int): size of square
-
         Return:
             None
         """
@@ -50,13 +52,18 @@ class Square:
 
     def __eq__(self, other):
         return self.__size == other.size
+
     def __ne__(self, other):
         return self.size != other.size
+
     def __lt__(self, other):
         return self.__size < other.size
+
     def __le__(self, other):
         return self.size <= other.size
+
     def __gt__(self, other):
         return self.size > other.size
+
     def __ge__(self, other):
         return self.size >= other.size

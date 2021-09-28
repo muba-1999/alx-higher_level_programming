@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Documentation for a square class"""
+
+
 class Square:
     """Square"""
     def __init__(self, size, position=(0, 0)):
@@ -65,7 +68,7 @@ class Square:
                     new += " "
                 for c in range(self.__size):
                     new += "#"
-                if i == self.__size -1:
+                if i == self.__size - 1:
                     new += ""
                 else:
                     new += "\n"
