@@ -4,6 +4,7 @@
 
 class Rectangle:
     """class to create a rectangle"""
+    instances = 0
     def __init__(self, width=0, height=0):
         """
         initializes the rectangle class
@@ -94,3 +95,4 @@ class Rectangle:
 
     def __del__(self):
         print('Bye rectangle...')
+        return instances -= 1
